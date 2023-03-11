@@ -1,0 +1,6 @@
+save path : ./save/
+{'adv_train': False, 'arch': 'vgg16_quan', 'attack_sample_size': 128, 'clustering': False, 'data_path': './data', 'dataset': 'stl10', 'decay': 0.0005, 'enable_bfa': False, 'enable_bfa_mydefense': False, 'epochs': 1, 'evaluate': False, 'fine_tune': False, 'gammas': [0.1, 0.1], 'gpu_id': 1, 'ic_only': False, 'k_top': None, 'lambda_coeff': 0.001, 'learning_rate': 0.01, 'manualSeed': 0, 'model_only': False, 'momentum': 0.9, 'n_iter': 20, 'ngpu': 1, 'optimizer': 'SGD', 'print_freq': 100, 'quan_bitwidth': None, 'random_bfa': False, 'reset_weight': False, 'resume': '', 'save_path': './save/', 'schedule': [80, 120], 'start_epoch': 0, 'test_batch_size': 128, 'use_cuda': True, 'weight': '1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1', 'workers': 1}
+Random Seed: 0
+python version : 3.6.9 (default, Apr 18 2020, 01:56:04)  [GCC 8.4.0]
+torch  version : 1.7.0
+cudnn  version : 7605
