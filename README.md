@@ -8,9 +8,10 @@ In each dataset and model, first train the base models, than the enhanced model.
 
 ### CIFAR
     cd cifar10/resnet32
+    sh train_CIFAR.sh
+    sh train_finetune_branch.sh
 
-### Run non-adaptove attacks
-    python3 TBT_noadaptive.py
+
 
 ## TBT Attacks
 
