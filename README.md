@@ -6,11 +6,45 @@
 ## Train Models
 In each dataset and model, first train the base models, than the enhanced model.
 
-### CIFAR
+### CIFAR10-resne32
     cd cifar10/resnet32
     sh train_CIFAR.sh
     sh train_finetune_branch.sh
+    
+### CIFAR10-vgg16
+    cd cifar10/resnet32
+    sh train_CIFAR.sh
+    sh train_finetune_branch.sh
+    
+### CIFAR100-resne32
+    cd cifar100/resnet32
+    sh train_CIFAR.sh
+    sh train_finetune_branch.sh
+    
+### CIFAR100-vgg16
+    cd cifar100/resnet32
+    sh train_CIFAR.sh
+    sh train_finetune_branch.sh
 
+### stl10-resne32
+    cd stl10/resnet32
+    sh train_STL.sh
+    sh train_finetune_branch.sh
+    
+### stl10-vgg16
+    cd stl10/resnet32
+    sh train_STL.sh
+    sh train_finetune_branch.sh
+    
+### tinyimagenet-resne32
+    cd tinyimagenet/resnet32
+    sh train_tinyimagenet.sh
+    sh train_finetune_branch.sh
+    
+### tinyimagenet-vgg16
+    cd tinyimagenet/resnet32
+    sh train_tinyimagenet.sh
+    sh train_finetune_branch.sh
 
 
 ## TBT Attacks
