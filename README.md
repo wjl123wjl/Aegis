@@ -6,7 +6,7 @@
 
 ### Run non-adaptove attacks:
     For example, sh ./attack_reproduce_k=50_vgg16_cifar10.sh
-    All sh file are listed as follows.
+    All sh files are listed as follows.
     cifar10 resnet32: attack_reproduce_k=50_resnet32_cifar10.sh
     cifar100 resnet32: attack_reproduce_k=50_resnet32_cifar100.sh
     stl10 resnet32: attack_reproduce_k=50_resnet32_stl10.sh
