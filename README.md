@@ -4,7 +4,7 @@
 
 
 ## Train Models
-In each dataset and model, first train the base models, than the enhanced model.
+In each dataset and model, first train the base model, than the enhanced model.
 
 ### CIFAR10-resne32
     cd cifar10/resnet32
@@ -12,7 +12,7 @@ In each dataset and model, first train the base models, than the enhanced model.
     sh train_finetune_branch.sh
     
 ### CIFAR10-vgg16
-    cd cifar10/resnet32
+    cd cifar10/vgg16
     sh train_CIFAR.sh
     sh train_finetune_branch.sh
     
@@ -22,7 +22,7 @@ In each dataset and model, first train the base models, than the enhanced model.
     sh train_finetune_branch.sh
     
 ### CIFAR100-vgg16
-    cd cifar100/resnet32
+    cd cifar100/vgg16
     sh train_CIFAR.sh
     sh train_finetune_branch.sh
 
@@ -32,7 +32,7 @@ In each dataset and model, first train the base models, than the enhanced model.
     sh train_finetune_branch.sh
     
 ### stl10-vgg16
-    cd stl10/resnet32
+    cd stl10/vgg16
     sh train_STL.sh
     sh train_finetune_branch.sh
     
@@ -42,7 +42,7 @@ In each dataset and model, first train the base models, than the enhanced model.
     sh train_finetune_branch.sh
     
 ### tinyimagenet-vgg16
-    cd tinyimagenet/resnet32
+    cd tinyimagenet/vgg16
     sh train_tinyimagenet.sh
     sh train_finetune_branch.sh
 
