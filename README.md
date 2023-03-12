@@ -39,3 +39,20 @@ First enter a folder to attack the target model, e.g., cd cifar100/resnet32
 
 ### Results
     The attack success rate under our defense are shown on the screen.
+    
+## ProFlip Attacks
+
+First enter a folder to attack the target model, e.g., cd cifar100/resnet32
+
+### Run non-adaptove attacks
+    Run the instruction to generate a trigger: python3 trigger_nonadaptive.py
+    Then, attack: python3 CSB_nonadaptive.py
+   
+### Run adaptive attacks
+    Run the instruction to generate a trigger: python3 trigger_adaptive.py
+    Then, attack: python3 CSB_adaptive.py
+    
+
+### Results
+    The attack success rate under our defense are shown on the screen.
+
