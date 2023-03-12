@@ -1,3 +1,18 @@
+## Package required
+
+(1) Please install python 3.6.9.
+
+(2) Please install pytorch 1.7.0. 
+
+(3) Please install torchvision 0.8.1. 
+
+(4) Please install tensorboardX 2.5. 
+
+(5) Please install pandas 1.1.5. 
+
+(6) Please install numpy 1.18.5.
+
+
 ## TA-LBF Attacks
 
 ### DATA
@@ -18,4 +33,4 @@
     
 
 ### Results
-    Results are shown on the screen.
+    The attack success rate under our defense are shown on the screen.
