@@ -1,4 +1,4 @@
-## TA-LBF
+## TA-LBF Attacks
 
 ### DATA
     ./utils.py modify line23 to specify positions to save data. When you first run attack scripts. We will automatically download CIFAR-10, CIFAR-100, STL-10. But you need to download tiny-ImageNet by yourself.
@@ -18,4 +18,4 @@
     
 
 ### Results
-    results are shown on the screen.
+    Results are shown on the screen.
