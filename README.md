@@ -3,6 +3,15 @@
     install python 3.6.9, pytorch 1.7.0, torchvision 0.8.1, tensorboardX 2.5, pandas 1.1.5, numpy 1.18.5.
 
 
+## Train Models
+In each dataset and model, first train the base models, than the enhanced model.
+
+### CIFAR
+    cd cifar10/resnet32
+
+### Run non-adaptove attacks
+    python3 TBT_noadaptive.py
+
 ## TBT Attacks
 
 First enter a folder to attack the target model, e.g., cd cifar100/resnet32
