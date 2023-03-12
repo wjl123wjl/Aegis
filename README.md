@@ -10,7 +10,7 @@ First enter a folder to attack the target model, e.g., cd cifar100/resnet32
 ### Run non-adaptove attacks
     python3 TBT_noadaptive.py
    
-### Run adaptove attacks
+### Run adaptive attacks
     python3 TBT_adaptive.py
     
 
