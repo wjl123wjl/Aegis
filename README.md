@@ -7,11 +7,11 @@ install python 3.6.9, pytorch 1.7.0, torchvision 0.8.1, tensorboardX 2.5, pandas
 
 First enter a folder to attack the target model, e.g., cd cifar100/resnet32
 
-### Run non-adaptove attacks: 
-   python3 TBT_noadaptive.py
+### Run non-adaptove attacks
+    python3 TBT_noadaptive.py
    
-### Run adaptove attacks: 
-   python3 TBT_adaptive.py
+### Run adaptove attacks
+    python3 TBT_adaptive.py
     
 
 ### Results
