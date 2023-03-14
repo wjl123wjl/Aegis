@@ -8,41 +8,49 @@ In each dataset and model, first train the base model, than the enhanced model.
 
 ### CIFAR10-resne32
     cd cifar10/resnet32
+    mkdir data
     sh train_CIFAR.sh
     sh train_finetune_branch.sh
     
 ### CIFAR10-vgg16
     cd cifar10/vgg16
+    mkdir data
     sh train_CIFAR.sh
     sh train_finetune_branch.sh
     
 ### CIFAR100-resne32
     cd cifar100/resnet32
+    mkdir data
     sh train_CIFAR.sh
     sh train_finetune_branch.sh
     
 ### CIFAR100-vgg16
     cd cifar100/vgg16
+    mkdir data
     sh train_CIFAR.sh
     sh train_finetune_branch.sh
 
 ### stl10-resne32
     cd stl10/resnet32
+    mkdir data
     sh train_STL.sh
     sh train_finetune_branch.sh
     
 ### stl10-vgg16
     cd stl10/vgg16
+    mkdir data
     sh train_STL.sh
     sh train_finetune_branch.sh
     
 ### tinyimagenet-resne32
     cd tinyimagenet/resnet32
+    mkdir data
     sh train_tinyimagenet.sh
     sh train_finetune_branch.sh
     
 ### tinyimagenet-vgg16
     cd tinyimagenet/vgg16
+    mkdir data
     sh train_tinyimagenet.sh
     sh train_finetune_branch.sh
 
