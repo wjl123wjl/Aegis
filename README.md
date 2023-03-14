@@ -1,6 +1,6 @@
 ## Package required
 
-    install python 3.6.9, pytorch 1.7.0, torchvision 0.8.1, tensorboardX 2.5, pandas 1.1.5, numpy 1.18.5.
+    install python 3.6.9, pytorch 1.7.0, torchvision 0.8.1, tensorboardX 2.5, matplotlib 3.3.4, tqdm 4.60.0, pandas 1.1.5, numpy 1.18.5.
 
 
 ## Train Models
