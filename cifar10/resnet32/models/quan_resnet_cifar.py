@@ -75,6 +75,29 @@ class ResNetBasicblock(nn.Module):
         
         # print("size:", t1*t2*t3)
         return F.relu(residual + basicblock, inplace=True), self.output(residual + basicblock)
+    def forward_2(self, x):
+        residual = x
+
+        basicblock = self.conv_a(x)
+        basicblock = self.bn_a(basicblock)
+        basicblock = F.relu(basicblock, inplace=True)
+
+        basicblock = self.conv_b(basicblock)
+        basicblock = self.bn_b(basicblock)
+
+        if self.downsample is not None:
+            residual = self.downsample(x)
+        # t1=(residual + basicblock).size()[1]
+        # t2=(residual + basicblock).size()[2]
+        # t3=(residual + basicblock).size()[3]
+        
+        # print("size:", t1*t2*t3)
+        # tmp = residual + basicblock 
+        # tmp_2 = F.relu(residual + basicblock, inplace=True)
+        # print("size1:", tmp.size(), tmp_2.size())
+        return F.relu(residual + basicblock, inplace=True), (residual + basicblock)
+    def flip_out(self, x):
+        return F.relu(x, inplace=True), self.output(x)
 
 
 class CifarResNet(nn.Module):
@@ -167,6 +190,31 @@ class CifarResNet(nn.Module):
         x = self.classifier(x)
         output_branch.append(x)
         return output_branch
+    def flip_outputs(self, x):
+      outputs = []
+      x = self.conv_1_3x3(x)
+      x = F.relu(self.bn_1(x), inplace=True)
+      for g in range(1, 4):
+        layer_num = len(getattr(self, 'group{}'.format(g)))
+        for i in range(layer_num):
+          x, branch_in = getattr(self, 'group{}'.format(g))[i].forward_2(x)
+          outputs.append(branch_in)
+      return outputs
+    def adv_outputs(self, input_l): # get bit-flipper final output 
+      outputs = []
+      c_ = 0
+      for g in range(1, 4):
+        layer_num = len(getattr(self, 'group{}'.format(g)))
+        for i in range(layer_num):
+          x, branch_out = getattr(self, 'group{}'.format(g))[i].flip_out(input_l[c_])
+          outputs.append(branch_out)
+          c_ +=1
+      x = self.avgpool(x)
+      x = x.view(x.size(0), -1)
+      #return self.classifier(x)
+      x = self.classifier(x)
+      outputs.append(x)
+      return outputs
 
 
 def resnet20_quan(num_classes=10):
