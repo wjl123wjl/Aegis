@@ -57,7 +57,7 @@ In each dataset and model, first train the base model, than the enhanced model.
 
 ## TBT Attacks
 
-First enter a folder to attack the target model, e.g., cd cifar100/resnet32
+First enter a folder to attack the target model, e.g., cd ./Aegis/TBT/resnet32-cifar10/
 
 ### Run non-adaptove attacks
     python3 TBT_noadaptive.py
@@ -108,7 +108,7 @@ First enter a folder to attack the target model, e.g., cd cifar100/resnet32
     The attack success rate under our defense are shown on the screen.
     
 ## ProFlip Attacks
-    First enter a folder to attack the target model, e.g., cd cifar100/resnet32
+    First enter a folder to attack the target model, e.g., cd ./Aegis/ProFlip/resnet32-cifar10/
 
 ### Run non-adaptove attacks
     Run the instruction to generate a trigger: python3 trigger_nonadaptive.py
